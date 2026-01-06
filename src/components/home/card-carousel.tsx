@@ -54,6 +54,17 @@ export const CardCarousel: React.FC<CarouselProps> = ({
   .swiper-3d .swiper-slide-shadow-right{
     background: none;
   }
+  .swiper-pagination {
+    bottom: 0 !important;
+  }
+  
+  .swiper-pagination-bullet {
+    background: rgba(255, 255, 255, 0.4);
+    opacity: 1;
+  }
+  .swiper-pagination-bullet-active {
+    background: white;
+  }
   `
   return (
     <section className="w-ace-y-4">

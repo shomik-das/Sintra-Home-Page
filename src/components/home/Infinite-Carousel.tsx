@@ -109,7 +109,7 @@ export function InfiniteCarousel() {
             return (
               <div
                 key={`${card.id}-${idx}`}
-                className={`flex-shrink-0 transition-all duration-500 ease-out ${
+                className={`shrink-0 transition-all duration-500 ease-out ${
                   isCenter ? "scale-100 opacity-100 z-20" : `scale-${85 - distance * 5} opacity-${100 - distance * 20}`
                 }`}
               >
