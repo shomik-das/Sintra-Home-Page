@@ -86,14 +86,14 @@ export const HeroHeader = () => {
                                     variant="outline"
                                     size="lg">
                                     <Link href="#">
-                                        <span>Login</span>
+                                        <span>Log in</span>
                                     </Link>
                                 </Button>
                                 <Button
                                     asChild
                                     size="lg">
                                     <Link href="#">
-                                        <span>Sign Up</span>
+                                        <span>Get Started</span>
                                     </Link>
                                 </Button>
                             </div>
