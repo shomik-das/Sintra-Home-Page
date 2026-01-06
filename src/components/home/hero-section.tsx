@@ -1,0 +1,67 @@
+import React from "react";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { HeroHeader } from "@/components/common/header";
+import { ChevronRight } from "lucide-react";
+import { InfiniteSlider } from "@/components/ui/infinite-slider";
+import { ProgressiveBlur } from "@/components/ui/progressive-blur";
+
+export default function HeroSection() {
+  return (
+    <>
+      <section className="relative min-h-screen overflow-hidden bg-black">
+        {/* Background Video */}
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 z-0 h-full w-full object-cover opacity-60 dark:opacity-45"
+          src="https://ik.imagekit.io/lrigu76hy/tailark/dna-video.mp4?updatedAt=1745736251477"
+        />
+
+        {/* Mobile bottom blend */}
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-[65%] bg-gradient-to-t from-black via-black/95 to-transparent lg:hidden" />
+
+        {/* Desktop blends */}
+        <div className="pointer-events-none absolute inset-0 z-10 hidden lg:block bg-[radial-gradient(ellipse_at_bottom_left,rgba(0,0,0,0.95)_0%,rgba(0,0,0,0.75)_40%,transparent_70%)]" />
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 hidden lg:block h-72 bg-gradient-to-t from-background via-background/80 to-transparent" />
+        <div className="pointer-events-none absolute inset-y-0 left-0 z-10 hidden lg:block w-72 bg-gradient-to-r from-background via-background/70 to-transparent" />
+
+        {/* Content */}
+        <div className="relative z-20 mx-auto flex min-h-screen max-w-7xl flex-col justify-end px-6 pb-10 lg:justify-center lg:pb-0 lg:px-12">
+          <div className="max-w-3xl text-left text-white">
+            <h1 className="text-4xl font-semibold leading-tight md:text-5xl xl:text-6xl">
+              AI Employees:
+              <br />
+              Your Helpers
+              <br />
+              That Never Sleep
+            </h1>
+
+            <p className="mt-4 max-w-xl text-sm text-white/80 md:text-lg">
+              Build, grow, and scale your business with a team of AI employees.
+            </p>
+
+            <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:gap-4">
+              <Button asChild size="lg" className="rounded-full">
+                <Link href="#link">
+                  Start Building <ChevronRight className="ml-1" />
+                </Link>
+              </Button>
+
+              <Button
+                asChild
+                size="lg"
+                variant="ghost"
+                className="rounded-full text-white hover:bg-white/10"
+              >
+                <Link href="#link">Request a demo</Link>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
