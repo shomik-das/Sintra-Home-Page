@@ -86,9 +86,9 @@ export const CardCarousel2nd: React.FC<CardCarousel2ndProps> = ({
             <div className="flex p-6 gap-2">
               <div>
                 <h3 className="text-4xl opacity-85 font-bold tracking-tight">
-                  Card Carousel
+                  Automates work.
                 </h3>
-                <p>Seamless Images carousel animation.</p>
+                <p className="text-muted-foreground" >Automate tasks with business automation tools.</p>
               </div>
             </div>
           </div>

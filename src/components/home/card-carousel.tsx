@@ -83,12 +83,12 @@ export const CardCarousel: React.FC<CardCarousel2ndProps> = ({
       <div className="mx-auto w-full max-w-6xl rounded-[24px] md:rounded-t-[44px]">
         <div className="relative mx-auto flex w-full flex-col rounded-[24px]  md:items-start md:gap-8 md:rounded-b-4xl md:rounded-t-[40px]">
           <div className="flex flex-col justify-center pb-2 pt-14 md:items-center">
-            <div className="flex p-6 md:p-0 gap-2">
+            <div className="flex p-6 gap-2">
               <div>
                 <h3 className="text-4xl opacity-85 font-bold tracking-tight">
-                  Card Carousel
+                  Automates work
                 </h3>
-                <p>Seamless Images carousel animation.</p>
+                <p className="text-muted-foreground" >Automate tasks with business automation tools.</p>
               </div>
             </div>
           </div>
