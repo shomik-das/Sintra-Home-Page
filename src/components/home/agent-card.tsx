@@ -30,7 +30,7 @@ export function AgentCard({
 
       {/* Text content */}
       <div className="space-y-2 px-4 pb-5 pt-4 text-white">
-        <h3 className="text-lg font-semibold">{name}</h3>
+        <h3 className="text-2xl font-semibold">{name}</h3>
         <p className="text-sm text-white/70">{role}</p>
 
         <p className="pt-1 text-sm leading-relaxed text-white/60">

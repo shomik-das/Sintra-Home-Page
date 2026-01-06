@@ -2,12 +2,8 @@ import HeroSection from '@/components/home/hero-section';
 import { CardCarousel } from '@/components/home/card-carousel';
 import { CardCarousel2nd } from '@/components/home/card-carousel-2nd';
 
-export default function Page() {
-  return (
-    <>
-      <HeroSection />
-      <CardCarousel2nd
-        agents={[
+
+const agents = [
     {
       image: "/image.png",
       name: "Cassie",
@@ -43,20 +39,20 @@ export default function Page() {
       description:
         "Manages hiring, onboarding, and employee support.",
     },
-  ]}
+  ]
+
+export default function Page() {
+  return (
+    <>
+      <HeroSection />
+      <CardCarousel2nd
+        agents={agents}
         autoplayDelay={20000}
         showPagination={true}
         showNavigation={true}
       />
       <CardCarousel
-        images={[
-          { src: '/image.png', alt: 'Image 1' },
-          { src: '/image2.png', alt: 'Image 2' },
-          { src: '/image3.png', alt: 'Image 3' },
-          { src: '/image4.png', alt: 'Image 4' },
-          { src: '/image5.png', alt: 'Image 5' },
-          { src: '/image6.png', alt: 'Image 6' },
-        ]}
+        agents={agents}
         autoplayDelay={20000}
         showPagination={true}
         showNavigation={true}
