@@ -1,6 +1,5 @@
 'use client'
 import Link from 'next/link'
-import { Logo } from '@/components/logo'
 import { Menu, X } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import React from 'react'
@@ -8,10 +7,11 @@ import { useScroll, motion } from 'motion/react'
 import { cn } from '@/lib/utils'
 
 const menuItems = [
+    { name: 'Products', href: '#link' },
     { name: 'Features', href: '#link' },
-    { name: 'Solution', href: '#link' },
     { name: 'Pricing', href: '#link' },
-    { name: 'About', href: '#link' },
+    { name: 'Resources', href: '#link' },
+    { name: 'Careers', href: '#link' },
 ]
 
 export const HeroHeader = () => {
@@ -30,7 +30,7 @@ export const HeroHeader = () => {
         <header>
             <nav
                 data-state={menuState && 'active'}
-                className="fixed z-20 w-full pt-2">
+                className="fixed z-50 w-full pt-2">
                 <div className={cn('mx-auto max-w-7xl rounded-3xl px-6 transition-all duration-300 lg:px-12', scrolled && 'bg-background/50 backdrop-blur-2xl')}>
                     <motion.div
                         key={1}
@@ -40,7 +40,7 @@ export const HeroHeader = () => {
                                 href="/"
                                 aria-label="home"
                                 className="flex items-center space-x-2">
-                                <Logo />
+                                <span className='font-bold text-4xl ' >sintra</span>
                             </Link>
 
                             <button
@@ -57,7 +57,7 @@ export const HeroHeader = () => {
                                         <li key={index}>
                                             <Link
                                                 href={item.href}
-                                                className="text-muted-foreground hover:text-accent-foreground block duration-150">
+                                                className="text-muted-foreground font-semibold hover:text-accent-foreground block duration-150">
                                                 <span>{item.name}</span>
                                             </Link>
                                         </li>
@@ -84,14 +84,14 @@ export const HeroHeader = () => {
                                 <Button
                                     asChild
                                     variant="outline"
-                                    size="sm">
+                                    size="lg">
                                     <Link href="#">
                                         <span>Login</span>
                                     </Link>
                                 </Button>
                                 <Button
                                     asChild
-                                    size="sm">
+                                    size="lg">
                                     <Link href="#">
                                         <span>Sign Up</span>
                                     </Link>

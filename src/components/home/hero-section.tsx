@@ -1,10 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { HeroHeader } from "@/components/common/header";
 import { ChevronRight } from "lucide-react";
-import { InfiniteSlider } from "@/components/ui/infinite-slider";
-import { ProgressiveBlur } from "@/components/ui/progressive-blur";
 
 export default function HeroSection() {
   return (
@@ -21,12 +18,12 @@ export default function HeroSection() {
         />
 
         {/* Mobile bottom blend */}
-        <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-[65%] bg-gradient-to-t from-black via-black/95 to-transparent lg:hidden" />
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-[65%] bg-linear-to-t from-black via-black/95 to-transparent lg:hidden" />
 
         {/* Desktop blends */}
         <div className="pointer-events-none absolute inset-0 z-10 hidden lg:block bg-[radial-gradient(ellipse_at_bottom_left,rgba(0,0,0,0.95)_0%,rgba(0,0,0,0.75)_40%,transparent_70%)]" />
-        <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 hidden lg:block h-72 bg-gradient-to-t from-background via-background/80 to-transparent" />
-        <div className="pointer-events-none absolute inset-y-0 left-0 z-10 hidden lg:block w-72 bg-gradient-to-r from-background via-background/70 to-transparent" />
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 hidden lg:block h-72 bg-linear-to-t from-background via-background/80 to-transparent" />
+        <div className="pointer-events-none absolute inset-y-0 left-0 z-10 hidden lg:block w-72 bg-linear-to-r from-background via-background/70 to-transparent" />
 
         {/* Content */}
         <div className="relative z-20 mx-auto flex min-h-screen max-w-7xl flex-col justify-end px-6 pb-10 lg:justify-center lg:pb-0 lg:px-12">
