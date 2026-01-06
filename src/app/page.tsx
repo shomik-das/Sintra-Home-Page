@@ -47,13 +47,13 @@ export default function Page() {
       <HeroSection />
       <CardCarousel2nd
         agents={agents}
-        autoplayDelay={20000}
+        autoplayDelay={6000}
         showPagination={true}
         showNavigation={true}
       />
       <CardCarousel
         agents={agents}
-        autoplayDelay={20000}
+        autoplayDelay={6000}
         showPagination={true}
         showNavigation={true}
       />
