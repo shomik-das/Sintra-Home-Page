@@ -67,7 +67,7 @@ export const CardCarousel: React.FC<CarouselProps> = ({
   }
   `
   return (
-    <section className="w-ace-y-4">
+    <section className="w-ace-y-4 mb-24">
       <style>{css}</style>
       <div className="mx-auto w-full max-w-6xl rounded-[24px] shadow-sm md:rounded-t-[44px]">
         <div className="relative mx-auto flex w-full flex-col rounded-[24px] shadow-sm md:items-start md:gap-8 md:rounded-b-4xl md:rounded-t-[40px]">
