@@ -1,12 +1,9 @@
 import HeroSection from '@/components/home/hero-section';
-import { HeroHeader } from '@/components/common/header';
-import { InfiniteCarousel } from '@/components/home/Infinite-Carousel';
 import { CardCarousel } from '@/components/home/card-carousel';
 
 export default function Page() {
   return (
     <>
-      <HeroHeader />
       <HeroSection />
       <CardCarousel
         images={[
@@ -16,7 +13,6 @@ export default function Page() {
           { src: '/image4.png', alt: 'Image 4' },
           { src: '/image5.png', alt: 'Image 5' },
           { src: '/image6.png', alt: 'Image 6' },
-          
         ]}
         autoplayDelay={20000}
         showPagination={true}
